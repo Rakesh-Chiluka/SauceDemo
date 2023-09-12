@@ -39,7 +39,6 @@ public class BasePage {
 	public void setUp() {
 		Reporter.log("Launch browser and Navigate to Application");
 		CommonUtils.launchBrowserAndNavigateToApp();
-
 		Reporter.log("Login to the Application");
 		LoginPage loginPage = new LoginPage();
 		Assert.assertEquals(loginPage.getLogoText(), "Swag Labs");
