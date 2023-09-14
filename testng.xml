@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.saucedemo.tests.TestAddtToCartAndOrderCreation"/>
+      <class name="com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation"/>
+      <class name="com.saucedemo.tests.endtoend.OrderDispatchedTest"/>     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

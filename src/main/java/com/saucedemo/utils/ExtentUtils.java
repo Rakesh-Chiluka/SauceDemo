@@ -6,13 +6,13 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentUtils {
-	public ExtentSparkReporter spark;
-	public ExtentReports extent;
-	public ExtentTest logger;
+	public static ExtentSparkReporter spark;
+	public static ExtentReports extent;
+	public static ExtentTest logger;
 
-	public void satrtReport() {
+	public static void setUpExtentReports() {
 		extent = new ExtentReports();
-		spark = new ExtentSparkReporter(System.getProperty("user.dire") + "test-output/ExtentSparkReport.html");
+		spark = new ExtentSparkReporter(System.getProperty("user.dir") + "\\test-output\\ExtentSparkReport.html");
 		extent.attachReporter(spark);
 		extent.setSystemInfo("Hostname", "KITS_Auto_Tests");
 		extent.setSystemInfo("Username", "rakesh@kits");
@@ -20,6 +20,14 @@ public class ExtentUtils {
 
 		spark.config().setDocumentTitle("Title of the Report");
 		spark.config().setReportName("Name of the report");
-		spark.config().setTheme(Theme.STANDARD);
+		spark.config().setTheme(Theme.STANDARD);		
+	}
+	
+	public static void createTest(String testName) {		
+		logger=extent.createTest(testName);
+	}
+	
+	public static void endReport() {
+		ExtentUtils.endReport();
 	}
 }
