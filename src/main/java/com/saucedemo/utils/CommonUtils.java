@@ -1,17 +1,8 @@
 package com.saucedemo.utils;
 
-import java.io.File;
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.nio.file.Files;
-import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Date;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,12 +11,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.saucedemo.base.BasePage;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class CommonUtils extends BasePage {
 
 	public static void launchBrowserAndNavigateToApp() {
-		WebDriverManager.chromiumdriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		driver = new ChromeDriver(options);
@@ -93,20 +81,6 @@ public class CommonUtils extends BasePage {
 			e.printStackTrace();
 		}
 		return flag;
-	}
-	
-	public static String captureScreenshot(Method method) {
-		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest=new File(System.getProperty("user.dir")+"/screenshots/"+method.getName()+"_"+new SimpleDateFormat("yyyyMMdd_HH").format(new Date())+".png");
-		String failedScreenshotPath=dest.getAbsolutePath();
-		try {
-			FileUtils.copyFile(src, dest);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		return failedScreenshotPath;
 	}
 
 }

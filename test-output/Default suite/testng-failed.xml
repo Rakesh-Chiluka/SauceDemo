@@ -3,18 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation">
+      <class name="com.saucedemo.tests.TestAddtToCartAndOrderCreation">
         <methods>
-          <include name="createParentReport"/>
-          <include name="endParentReport"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="endReport"/>
-          <include name="initiaLize"/>
           <include name="OrderCreationTest"/>
-          <include name="OrderCreationTest2"/>
+          <include name="initiaLize"/>
         </methods>
-      </class> <!-- com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation -->
+      </class> <!-- com.saucedemo.tests.TestAddtToCartAndOrderCreation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

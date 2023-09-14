@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 14 11:37:03 IST 2023</td>
+<td>Started on:</td><td>Wed Jul 19 11:46:59 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (41 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6856 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,228 +67,33 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation.createParentReport()'><b>createParentReport</b><br>Test class: com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation</td>
-<td><div><pre>org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeClass annotated createParentReport.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1195942137", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1195942137'><pre>org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeClass annotated createParentReport.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>-1694671623</td>
-<td>com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation@52b1beb6</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation.tearDown()'><b>tearDown</b><br>Test class: com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation</td>
+<td title='com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation.OrderCreationTest()'><b>OrderCreationTest</b><br>Test class: com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation<br/>
+<a href="#Output-801284613" onClick='toggleBox("Output-801284613", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-801284613" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-801284613">
+User navigates to home page and verifies Product name, description and Price<br/>
+User navigates to product details page by clicking on Product link and verifies Product name, description and Price<br/>
+User clicks on Add to cart button and verifies the product quantity<br/>
+User navigates to Shopping cart page by clicking on shopping cart link and verifies Product name, description, Price and quantity <br/>
+User navigates to Checkout Informaion page by clicking on Checkout button<br/>
+User enters customer details like firstname, Lastname and Zipcode in Checkout Information page and clicks on continue button<br/>
+User navigates to Checkout overview page and verifies Product name, description, Price and quantity<br/>
+User navaigates to Checkout complete page and verifies complete image, Thank you message and Order dispatch message <br/>
+User navigates to Home page by clicking on Back to home button and verifies the current url<br/>
+</div>
+</td>
 <td></td>
-<td>-1694671623</td>
-<td>com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation@52b1beb6</td></tr>
-<tr>
-<td title='com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation.setUp()'><b>setUp</b><br>Test class: com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation</td>
-<td></td>
-<td>-1694671623</td>
-<td>com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation@52b1beb6</td></tr>
-<tr>
-<td title='com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation.tearDown()'><b>tearDown</b><br>Test class: com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation</td>
-<td></td>
-<td>-1694671623</td>
-<td>com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation@52b1beb6</td></tr>
-<tr>
-<td title='com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation.endParentReport()'><b>endParentReport</b><br>Test class: com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation</td>
-<td></td>
-<td>-1694671623</td>
-<td>com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation@52b1beb6</td></tr>
-<tr>
-<td title='com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation.setUp()'><b>setUp</b><br>Test class: com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation</td>
-<td></td>
-<td>-1694671623</td>
-<td>com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation@52b1beb6</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation.OrderCreationTest2()'><b>OrderCreationTest2</b><br>Test class: com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation</td>
-<td><div><pre>org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeClass annotated createParentReport.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace40191541", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace40191541'><pre>org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeClass annotated createParentReport.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation@52b1beb6</td></tr>
-<tr>
-<td title='com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation.OrderCreationTest()'><b>OrderCreationTest</b><br>Test class: com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation</td>
-<td><div><pre>org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeClass annotated createParentReport.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace42102625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace42102625'><pre>org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeClass annotated createParentReport.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation@52b1beb6</td></tr>
+<td>1</td>
+<td>com.saucedemo.tests.endtoend.TestAddtToCartAndOrderCreation@53ce1329</td></tr>
 </table><p>
 </body>
 </html>

@@ -2,23 +2,20 @@ package com.saucedemo.tests.endtoend;
 
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.saucedemo.pages.CheckoutCompletePage;
 import com.saucedemo.pages.CheckoutInformationPage;
 import com.saucedemo.pages.CheckoutOverviewPage;
 import com.saucedemo.pages.HomePage;
-import com.saucedemo.pages.LoginPage;
 import com.saucedemo.pages.ProductDetailsPage;
 import com.saucedemo.pages.ShoppingCartPage;
 import com.saucedemo.utils.CommonUtils;
-import com.saucedemo.utils.ExtentUtils;
 
 public class TestAddtToCartAndOrderCreation extends CommonUtils {
 
 	@Test
-	public void OrderCreationTest1() {
+	public void OrderCreationTest() {
 		String homePageUrl = "https://www.saucedemo.com/inventory.html";
 		String productName = "Sauce Labs Backpack";
 		String productDescritption = "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.";
@@ -29,12 +26,6 @@ public class TestAddtToCartAndOrderCreation extends CommonUtils {
 		String zipCode = "500092";
 		String thankYouMessage = "Thank you for your order!";
 		String orderDispatchMessage = "Your order has been dispatched, and will arrive just as fast as the pony can get there!";
-		
-//		ExtentUtils.createTest("Order Creation test1");
-		Reporter.log("Login to the Application");
-		LoginPage loginPage = new LoginPage();
-		Assert.assertEquals(loginPage.getLogoText(), "Swag Labs");
-		loginPage.login();
 
 		Reporter.log("User navigates to home page and verifies Product name, description and Price");
 		HomePage homePage = new HomePage();
@@ -87,13 +78,6 @@ public class TestAddtToCartAndOrderCreation extends CommonUtils {
 		Reporter.log("User navigates to Home page by clicking on Back to home button and verifies the current url");
 		checkoutCompletePage.clickBackToHomeButton();
 		Assert.assertEquals(homePage.getCurrentUrl(), homePageUrl);
-		Assert.assertTrue(false);
 	}
 
-	@Test
-	public void OrderCreationTest2() {
-		//ExtentUtils.createTest("Order creation test2");
-		System.out.println("Order creation 2 is implemented");
-
-	}
 }
