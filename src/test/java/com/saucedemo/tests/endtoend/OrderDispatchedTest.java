@@ -10,7 +10,6 @@ public class OrderDispatchedTest extends CommonUtils {
 	
 	@Test
 	public void OrderDispatchedJourney() {
-		//ExtentUtils.createTest("OrderDispatchedJourney");
 		System.out.println("Order dispatched");
 	}
 
